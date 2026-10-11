@@ -1,0 +1,86 @@
+[
+  {
+    "epoch": 1,
+    "training_ce": 0.7042954694518336,
+    "validation_nll": 0.43313449906964213,
+    "validation_accuracy": 84.53333333333333,
+    "seconds": 5.273373799998808
+  },
+  {
+    "epoch": 2,
+    "training_ce": 0.40616112671958077,
+    "validation_nll": 0.36211838617489556,
+    "validation_accuracy": 86.75,
+    "seconds": 5.391966199997114
+  },
+  {
+    "epoch": 3,
+    "training_ce": 0.35995679548051623,
+    "validation_nll": 0.32621296635490904,
+    "validation_accuracy": 88.64999999999999,
+    "seconds": 5.139380999997229
+  },
+  {
+    "epoch": 4,
+    "training_ce": 0.32066139702443724,
+    "validation_nll": 0.2921905599180736,
+    "validation_accuracy": 89.25,
+    "seconds": 5.284902299998066
+  },
+  {
+    "epoch": 5,
+    "training_ce": 0.29973018969429865,
+    "validation_nll": 0.28957501284954384,
+    "validation_accuracy": 89.2,
+    "seconds": 5.260704299998906
+  },
+  {
+    "epoch": 6,
+    "training_ce": 0.28402270183739836,
+    "validation_nll": 0.27521848745434774,
+    "validation_accuracy": 89.95,
+    "seconds": 5.25731960000121
+  },
+  {
+    "epoch": 7,
+    "training_ce": 0.2708454488206793,
+    "validation_nll": 0.2716539367222036,
+    "validation_accuracy": 90.3,
+    "seconds": 5.259288599998399
+  },
+  {
+    "epoch": 8,
+    "training_ce": 0.2601212748686473,
+    "validation_nll": 0.26337128126674914,
+    "validation_accuracy": 90.43333333333334,
+    "seconds": 5.589368500001001
+  },
+  {
+    "epoch": 9,
+    "training_ce": 0.25060925100467824,
+    "validation_nll": 0.26360167331694556,
+    "validation_accuracy": 90.75,
+    "seconds": 5.05740539999897
+  },
+  {
+    "epoch": 10,
+    "training_ce": 0.24422081602061235,
+    "validation_nll": 0.25355819831502274,
+    "validation_accuracy": 90.91666666666667,
+    "seconds": 5.214988399999129
+  },
+  {
+    "epoch": 11,
+    "training_ce": 0.24004852647251554,
+    "validation_nll": 0.25113210757669907,
+    "validation_accuracy": 91.11666666666667,
+    "seconds": 5.133538000001863
+  },
+  {
+    "epoch": 12,
+    "training_ce": 0.23701345028259135,
+    "validation_nll": 0.25074373677286943,
+    "validation_accuracy": 91.08333333333334,
+    "seconds": 5.196657600001345
+  }
+]

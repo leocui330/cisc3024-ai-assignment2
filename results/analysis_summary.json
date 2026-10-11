@@ -1,0 +1,44 @@
+{
+  "metrics_recomputed": true,
+  "nll_clipped_count": 0,
+  "seed11_largest_confusions": [
+    {
+      "true": "Shirt",
+      "predicted": "T-shirt/top",
+      "count": 132
+    },
+    {
+      "true": "Shirt",
+      "predicted": "Coat",
+      "count": 89
+    },
+    {
+      "true": "Shirt",
+      "predicted": "Pullover",
+      "count": 80
+    },
+    {
+      "true": "T-shirt/top",
+      "predicted": "Shirt",
+      "count": 80
+    },
+    {
+      "true": "Pullover",
+      "predicted": "Coat",
+      "count": 69
+    }
+  ],
+  "seed11_class_accuracy": {
+    "T-shirt/top": 84.7,
+    "Trouser": 97.4,
+    "Pullover": 85.8,
+    "Dress": 90.4,
+    "Coat": 86.0,
+    "Sandal": 97.3,
+    "Shirt": 65.3,
+    "Sneaker": 96.3,
+    "Bag": 97.9,
+    "Ankle boot": 96.2
+  },
+  "total_training_seconds": 333.34776390000115
+}

@@ -1,0 +1,16 @@
+# Pre-test experiment protocol
+
+Established before any test evaluation, 2026-10-11. This is a reduced-scale experiment, not the published benchmark recipe.
+
+1. Fashion-MNIST: official 60,000 training images split by class with split seed 20261011 into 54,000 training and 6,000 validation examples (5,400/600 per class). Official 10,000 test images are used only by the final evaluation command. Normalize pixels as (pixel/255 - 0.5)/0.5; no learned preprocessing or augmentation.
+2. Three independent CNN feature-training seeds: 11, 22, 33. A compact CNN with 16/32 convolution channels, max pooling and a 64-dimensional feature vector is trained for 12 epochs, AdamW lr=0.001, weight_decay=0.0001, batch=256, cosine decay. Select the CNN checkpoint by validation hard-label NLL, never test accuracy. No label smoothing.
+3. Freeze each selected CNN. Train MAP and diagonal, zero-noise D-VBLL heads on its identical cached training features. Initialize their means from the same CNN classifier, augment a constant feature for biases, and use a zero-centred isotropic Gaussian prior for all head coefficients. Initial posterior standard deviation 0.01. Both heads use Adam lr=0.003, batch=512, 40 epochs, and identical mini-batch orders.
+4. Shared candidate prior standard deviations: 0.1, 1.0, 10.0. Use KL/N_train for VBLL and squared-mean/(2*prior_variance*N_train) for MAP. Select each head's prior and epoch by validation predictive NLL. This compares equally budgeted tuned procedures, not an isolated covariance effect.
+5. Predict VBLL by averaging 128 antithetic Gaussian-logit softmax samples; training does not sample. Validation uses a fixed local MC seed. Test uses a separate fixed local MC seed. Inference does not modify the training RNG.
+6. Additional comparisons: selected MAP with a single positive temperature fit on validation NLL; selected VBLL evaluated at its posterior mean (prediction-only ablation). Temperature uses bounded scalar optimization (T between 0.05 and 10). Do not claim the posterior-mean ablation removes Bayesian regularization from training.
+7. Finish all seeds/configuration selection and write a freeze manifest with file hashes before test evaluation. Do not retrain or select algorithms based on final test results. Report negative or negligible differences as observed.
+8. Metrics: accuracy (%), hard-label NLL (natural log), sum-over-classes multiclass Brier score, ECE (15 equal-width maximum-confidence bins, %). Report mean and sample standard deviation (ddof=1) across three seeds, descriptive rather than a significance claim. Save per-example probabilities and labels; choose seed 11 for all illustrative plots in advance.
+9. Save training histories, selected hyperparameters, split indices/hashes, environment metadata and wall-clock timing boundaries. Raw training time includes validation/checkpointing but not final evaluation/report creation. CPU runtime is measured, not assumed.
+10. Necessary checks: numerical KL and Jensen-bound checks, gradient finiteness, normalized probabilities, stochastic prediction/repeatability, disjoint partitions, metric hand-calculation, checkpoint reload. Test labels are not passed to training/selection code.
+
+No OOD experiment is needed to meet the assignment. Conclusions are limited to Fashion-MNIST and uncertainty in the last layer, not the entire CNN.

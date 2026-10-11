@@ -1,0 +1,6 @@
+# Tested with Python 3.12 and CPU PyTorch; a fresh environment is recommended.
+torch==2.9.1
+torchvision==0.24.1
+numpy>=1.26,<3
+scipy>=1.11,<2
+matplotlib>=3.8,<4

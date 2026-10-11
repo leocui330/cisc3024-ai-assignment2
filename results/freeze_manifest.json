@@ -1,0 +1,30 @@
+{
+  "frozen_at_utc": "2026-10-11T01:04:33Z",
+  "test_evaluated": false,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "file_hashes": {
+    "docs/PROTOCOL.md": "6fb40b7517a8462241b4108f8a54e110ed4fd2d42d0fc211c1fba73ba1addece",
+    "data/processed/split.npz": "3dbd0d65795fe709f229c0af9f40fdfacdf7ff84b10a3087dc721b73fff5ca9f",
+    "src/analyze.py": "f5ed8ee04802cf696c40227e0030775d5a37b3d7602c2ee72cdace7e502d7865",
+    "src/experiment.py": "4e77722d19a8e9800b97ca424bcb08e7ea248b0ced6435f245511cb8ea4c9b26",
+    "src/heads.py": "488a1185010be27afbafbc558a97e31c4ceaac47778a2412291daeaab3425cf8",
+    "src/metrics.py": "5ec511e3a06005c8dc5cf21de43b3ad2bcaaaaefd7d2f3ede440c4c8f8e1dde8",
+    "src/network.py": "ff35b824a0533ef7f335d42e74e0b21672ea9c50f89623b06683398b69d20c61",
+    "output/runs/seed_11/cnn.pt": "04e1f3302a71d70d5a1729edb547c6ccfd4342b28788073196b211d5bde4c540",
+    "output/runs/seed_11/map.pt": "8b3620cc236276e7772d7d51a0d5145df25e9f90bbed37fd433c6f4fd651ee86",
+    "output/runs/seed_11/vbll.pt": "20f99981294e30873e5bdc0a956116b23ed33773a9c70e0de2cead5441e91943",
+    "output/runs/seed_11/selection.json": "4cfcf08a7693e50ccffa0a4881ec054d7329ca3cb595d5a3e53c8b361e93b2b5",
+    "output/runs/seed_22/cnn.pt": "3a7953be7a06f2a439a1acb60c6a03690d4a0fd3ca4b70d6f701da935b8f42e6",
+    "output/runs/seed_22/map.pt": "91e2b504ab3e49a5b62117846ee50af12fe95bedbbc598f690df2196f0c31ce9",
+    "output/runs/seed_22/vbll.pt": "bb57f14eb402246ef201fccebe3af4e06afc50a3cffb2cf0a57dc3afb2bf5077",
+    "output/runs/seed_22/selection.json": "f0d2acd09aef52ba74a1d5507e65b197eac5f196bb24afd24e85234cb57c34d7",
+    "output/runs/seed_33/cnn.pt": "8917b3b024ae480b314575265fa511d1191a29661147917d9626f6b7d07050f3",
+    "output/runs/seed_33/map.pt": "1e031ec8bb0068394493fedab921f88e6ab066280ad753edf3d161aabbe86b83",
+    "output/runs/seed_33/vbll.pt": "8b832b05805c0007641fe5378d1b24e86acd4a907af547ea0f96ee7bf160aa2c",
+    "output/runs/seed_33/selection.json": "7d7430a4f005ed91034211272947054569f7d7199395b93da4337176156212d2"
+  }
+}

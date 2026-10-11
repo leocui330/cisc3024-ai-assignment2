@@ -1,0 +1,25 @@
+{
+  "cnn_epochs": 12,
+  "head_epochs": 40,
+  "threads": 6,
+  "torch_version": "2.9.1+cpu",
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "priors": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "mc_samples": 128,
+  "inputs": {
+    "src/experiment.py": "4e77722d19a8e9800b97ca424bcb08e7ea248b0ced6435f245511cb8ea4c9b26",
+    "src/heads.py": "488a1185010be27afbafbc558a97e31c4ceaac47778a2412291daeaab3425cf8",
+    "src/metrics.py": "5ec511e3a06005c8dc5cf21de43b3ad2bcaaaaefd7d2f3ede440c4c8f8e1dde8",
+    "src/network.py": "ff35b824a0533ef7f335d42e74e0b21672ea9c50f89623b06683398b69d20c61",
+    "docs/PROTOCOL.md": "6fb40b7517a8462241b4108f8a54e110ed4fd2d42d0fc211c1fba73ba1addece",
+    "data/processed/split.npz": "3dbd0d65795fe709f229c0af9f40fdfacdf7ff84b10a3087dc721b73fff5ca9f"
+  }
+}

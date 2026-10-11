@@ -1,0 +1,33 @@
+{
+  "seed": 22,
+  "cnn_epoch": 12,
+  "cnn_validation_nll": 0.24964501077199233,
+  "selected": {
+    "map": {
+      "prior_std": 1.0,
+      "epoch": 35,
+      "validation_nll": 0.2478243761715143,
+      "validation_accuracy": 90.98333333333333
+    },
+    "vbll": {
+      "prior_std": 1.0,
+      "epoch": 35,
+      "validation_nll": 0.2477932543671725,
+      "validation_accuracy": 90.98333333333333
+    },
+    "map_temperature": {
+      "temperature": 1.0657743216389657,
+      "validation_nll": 0.2472167871980773
+    }
+  },
+  "cnn_seconds": 63.5454512000033,
+  "head_seconds": 33.74315220000062,
+  "total_seconds": 100.47631150000234,
+  "validation_mc_check": {
+    "nll128": 0.2477932543671725,
+    "nll512": 0.2477888875346373,
+    "mean_absolute_probability_difference": 1.015552697936073e-05,
+    "maximum_absolute_probability_difference": 0.002812732011079788
+  },
+  "checkpoint_reload_exact": true
+}
